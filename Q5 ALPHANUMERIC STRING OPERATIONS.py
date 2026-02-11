@@ -1,0 +1,5 @@
+s = input("Enter an alphanumeric string: ")
+print("Uppercase letters:", ''.join([ch for ch in s if ch.isupper()]))
+print("Special characters:", ''.join([ch for ch in s if not ch.isalnum()]))
+print("Numerals:", ''.join([ch for ch in s if ch.isdigit()]))
+print("Swapped case string:", s.swapcase())
